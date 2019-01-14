@@ -1,0 +1,45 @@
+ <!-- Page Content -->
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-3">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <h4 class="mb-1 text-warning">Search by Name</h4>
+                <div class="autocompletion">
+                    <form name="autofillform" action="hubAutocomplete" style="padding: 0; width: auto;">
+                      <div class="form-group" >
+                        <div class="input-group">
+                          <input type="text" class="form-control" id="complete-field" size="50" onkeyup="doCompletion()" placeholder="Search Movies">
+                          <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+                        </div>
+                        <div id="auto-row">
+                          <table style="width: 100%; top: 136px; display: table;" id="complete-table" class="popupBox well table table-striped"></table>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+            </li>
+            <li class="list-group-item">
+              <h4 class="mb-1 text-warning">Trends</h4>
+              <a href='hubTrending'><small class='text-muted'><strong>View Trends</strong></small></a><br>
+            </li>
+            <li class="list-group-item">
+              <h4 class="mb-1 text-warning">Genre</h4>
+              <a href='hubAction'><small class='text-muted'><strong>Action</strong></small></a><br>
+              <a href='hubAnimation'><small class='text-muted'><strong>Animated</strong></small></a><br>
+              <a href='hubClassic'><small class='text-muted'><strong>Classic</strong></small></a><br>
+              <a href='hubComedy'><small class='text-muted'><strong>Comedy</strong></small></a><br>
+              <a href='hubHorror'><small class='text-muted'><strong>Horror</strong></small></a><br>
+            </li>        
+            
+              #navigationList
+            
+            <li class="list-group-item">
+              <h4 class="mb-1 text-warning"></h4>
+              <a href='hubRSS'><small class='text-muted'><strong>RSS Feed</strong></small></a><br>
+              <a href='hubDonation'><small class='text-muted'><strong>Donations</strong></small></a><br>
+            </li>
+        </ul>
+        </div>

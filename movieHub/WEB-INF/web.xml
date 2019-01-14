@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+
+  <display-name>Test</display-name>
+  <welcome-file-list>
+    <welcome-file>/hubHome</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>HomeServlet</servlet-name>
+    <servlet-class>HomeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HomeServlet</servlet-name>
+    <url-pattern>/hubHome</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/hubLogin</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+   <servlet-name>SignupServlet</servlet-name>
+   <servlet-class>SignupServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+  <servlet-name>SignupServlet</servlet-name>
+  <url-pattern>/hubSignUp</url-pattern>
+</servlet-mapping>  
+
+<servlet>
+ <servlet-name>LogoutServlet</servlet-name>
+ <servlet-class>LogoutServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>LogoutServlet</servlet-name>
+  <url-pattern>/hubLogout</url-pattern>
+</servlet-mapping> 
+
+<servlet>
+  <servlet-name>ViewMovieDescriptionServlet</servlet-name>
+  <servlet-class>ViewMovieDescriptionServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>ViewMovieDescriptionServlet</servlet-name>
+  <url-pattern>/hubViewdescription</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>ViewUserSubscriptionServlet</servlet-name>
+  <servlet-class>ViewUserSubscriptionServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>ViewUserSubscriptionServlet</servlet-name>
+  <url-pattern>/hubWatchSubscription</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>AddMoviesServlet</servlet-name>
+  <servlet-class>AddMoviesServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>AddMoviesServlet</servlet-name>
+  <url-pattern>/hubAddMovies</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+  <servlet-name>UpdateMovieServlet</servlet-name>
+  <servlet-class>UpdateMovieServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>UpdateMovieServlet</servlet-name>
+  <url-pattern>/hubUpdateMovies</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>UpdateMoviesDetailsServlet</servlet-name>
+  <servlet-class>UpdateMoviesDetailsServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>UpdateMoviesDetailsServlet</servlet-name>
+  <url-pattern>/hubUpdateMoviesDetails</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>ViewDescriptionServlet</servlet-name>
+  <servlet-class>ViewDescriptionServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>ViewDescriptionServlet</servlet-name>
+  <url-pattern>/viewdescription</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>DeleteMoviesServlet</servlet-name>
+  <servlet-class>DeleteMoviesServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>DeleteMoviesServlet</servlet-name>
+  <url-pattern>/hubDeleteMovies</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+  <servlet-name>AddCustomerServlet</servlet-name>
+  <servlet-class>AddCustomerServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>AddCustomerServlet</servlet-name>
+  <url-pattern>/hubAddcustomer</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>ActionMoviesServlet</servlet-name>
+  <servlet-class>ActionMoviesServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>ActionMoviesServlet</servlet-name>
+  <url-pattern>/hubAction</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>AnimationMoviesServlet</servlet-name>
+  <servlet-class>AnimationMoviesServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>AnimationMoviesServlet</servlet-name>
+  <url-pattern>/hubAnimation</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>ClassicMoviesServlet</servlet-name>
+  <servlet-class>ClassicMoviesServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>ClassicMoviesServlet</servlet-name>
+  <url-pattern>/hubClassic</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>ComedyMoviesServlet</servlet-name>
+  <servlet-class>ComedyMoviesServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>ComedyMoviesServlet</servlet-name>
+  <url-pattern>/hubComedy</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>HorrorMoviesServlet</servlet-name>
+  <servlet-class>HorrorMoviesServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>HorrorMoviesServlet</servlet-name>
+  <url-pattern>/hubHorror</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>FreeMoviesServlet</servlet-name>
+  <servlet-class>FreeMoviesServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>FreeMoviesServlet</servlet-name>
+  <url-pattern>/hubFree</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>WatchMoviesServlet</servlet-name>
+  <servlet-class>WatchMoviesServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>WatchMoviesServlet</servlet-name>
+  <url-pattern>/hubWatch</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>FAQServlet</servlet-name>
+  <servlet-class>FAQServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>FAQServlet</servlet-name>
+  <url-pattern>/hubFAQ</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>RSSServlet</servlet-name>
+  <servlet-class>RSSServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>RSSServlet</servlet-name>
+  <url-pattern>/hubRSS</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>DonationServlet</servlet-name>
+  <servlet-class>DonationServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>DonationServlet</servlet-name>
+  <url-pattern>/hubDonation</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>CartServlet</servlet-name>
+  <servlet-class>CartServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>CartServlet</servlet-name>
+  <url-pattern>/hubCart</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>SubscribeServlet</servlet-name>
+  <servlet-class>SubscribeServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>SubscribeServlet</servlet-name>
+  <url-pattern>/hubSubscribe</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>RenewSubscriptionServlet</servlet-name>
+  <servlet-class>RenewSubscriptionServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>RenewSubscriptionServlet</servlet-name>
+  <url-pattern>/hubRenewSubscription</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>RemoveSubscriptionServlet</servlet-name>
+  <servlet-class>RemoveSubscriptionServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>RemoveSubscriptionServlet</servlet-name>
+  <url-pattern>/hubRemoveSubscription</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>WriteFeedbackServlet</servlet-name>
+  <servlet-class>WriteFeedbackServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>WriteFeedbackServlet</servlet-name>
+  <url-pattern>/hubWriteFeedback</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>SalesReportServlet</servlet-name>
+  <servlet-class>SalesReportServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>SalesReportServlet</servlet-name>
+  <url-pattern>/hubSalesReport</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>TrendingServlet</servlet-name>
+  <servlet-class>TrendingServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>TrendingServlet</servlet-name>
+  <url-pattern>/hubTrending</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>ReadReviewServlet</servlet-name>
+  <servlet-class>ReadReviewServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>ReadReviewServlet</servlet-name>
+  <url-pattern>/hubReadreview</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>DataVisualizationServlet</servlet-name>
+  <servlet-class>DataVisualizationServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>DataVisualizationServlet</servlet-name>
+  <url-pattern>/hubDatavisualization</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>AjaxUtility</servlet-name>
+  <servlet-class>AjaxUtility</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>AjaxUtility</servlet-name>
+  <url-pattern>/hubAutocomplete</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>DataCategoryServlet</servlet-name>
+    <servlet-class>DataCategoryServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DataCategoryServlet</servlet-name>
+    <url-pattern>/hubDataCategory</url-pattern>
+  </servlet-mapping>
+
+    <servlet>
+    <servlet-name>DataCityServlet</servlet-name>
+    <servlet-class>DataCityServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DataCityServlet</servlet-name>
+    <url-pattern>/hubDataCity</url-pattern>
+  </servlet-mapping>
+
+    <servlet>
+    <servlet-name>DataMovieServlet</servlet-name>
+    <servlet-class>DataMovieServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DataMovieServlet</servlet-name>
+    <url-pattern>/hubDataMovie</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>DataLeastServlet</servlet-name>
+    <servlet-class>DataLeastServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DataLeastServlet</servlet-name>
+    <url-pattern>/hubDataLeast</url-pattern>
+  </servlet-mapping>
+
+</web-app>
