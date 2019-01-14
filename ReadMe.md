@@ -1,4 +1,4 @@
-﻿# MovieHub: Online Movie Retailer
+# MovieHub: Online Movie Retailer
 
 Steps to deploy and run the project:-
 
